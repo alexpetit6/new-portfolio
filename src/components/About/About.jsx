@@ -8,8 +8,7 @@ export default function About({ scrollY }) {
   function getOpacity(scrollY, setOpacity, id) {
     const offsetTop = document.getElementById(id).offsetTop
     const opacity = scrollY / (offsetTop / 2);
-    if (opacity <= 0.25) return
-    setOpacity(opacity);
+    opacity <= 0.25 ? setOpacity(0.25) : setOpacity(opacity);
   }
 
   // function getOffset() {
