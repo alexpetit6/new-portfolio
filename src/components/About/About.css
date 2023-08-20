@@ -19,13 +19,15 @@
 
 #expand-about {
   /* background-image: radial-gradient(at 0% 0%, #FFF7AD, #FFA9F9, #2400FF); */
+  cursor: pointer;
   background-color: rgba(222, 222, 222);
   padding: none;
   border-radius: 2vmin;
-  transition: background-color 2s, color 2s;
+  transition: background-color 2s, color 2s, text-shadow 2s;
 }
 
 #expand-about:hover {
+  text-shadow: 1px 1px 2px black;
   background-color: rgba(222,222,222, 0);
   color: white;
   border: 0.3vmin solid black
