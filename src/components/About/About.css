@@ -8,6 +8,17 @@
   margin-bottom: 100vh
 }
 
-.about-text > h2 {
-  padding-bottom: 100vh;
+.about-text > div > h6 {
+  display: inline;
+}
+
+.contact-logos {
+  margin-inline: 4px;
+  height: 30px;
+}
+
+@media (max-width: 576px) {
+  #contact-header {
+    display: block;
+  }
 }
