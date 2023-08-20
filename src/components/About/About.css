@@ -2,23 +2,35 @@
   display: flex;
   width: 100vw;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 95vh;
   margin-bottom: 100vh
 }
 
-.about-text > div > h6 {
-  display: inline;
+#about-gif {
+  width: 25%;
+  /* border: solid 1vmin black; */
+  border-radius: 2vmin;
+  background-image: url('https://i.imgur.com/QWY6j8K.gif');
+  margin-bottom: 100vh;
+  /* opacity: 0.5; */
 }
 
-.contact-logos {
-  margin-inline: 4px;
-  height: 30px;
+#expand-about {
+  /* background-image: radial-gradient(at 0% 0%, #FFF7AD, #FFA9F9, #2400FF); */
+  background-color: rgba(222, 222, 222);
+  padding: none;
+  border-radius: 2vmin;
+  transition: background-color 2s, color 2s;
 }
 
-@media (max-width: 576px) {
-  #contact-header {
-    display: block;
-  }
+#expand-about:hover {
+  background-color: rgba(222,222,222, 0);
+  color: white;
+  border: 0.3vmin solid black
+}
+
+#expand-about > h2 {
+  margin: 0;
 }
