@@ -1,0 +1,13 @@
+.about-text {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 95vh;
+  margin-bottom: 100vh
+}
+
+.about-text > h2 {
+  padding-bottom: 100vh;
+}
