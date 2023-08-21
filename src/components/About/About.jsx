@@ -1,12 +1,20 @@
 import './About.css'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { getOpacity } from '../../utilities/getOpacity'
 
 export default function About({ scrollY }) {
   const [opacity, setOpacity] = useState(0.25);
   // const [offset, setOffset] = useState(0)
-  const expanded = document.getElementById('about-expanded');
-  const expandedHeight = expanded.scrollHeight
+
+  const expandedRef = useRef(null);
+  const expandAboutRef = useRef(null);
+  
+  const expandedHeight = expandedRef.current ? expandedRef.current.scrollHeight : null;
+
+  function handleExpandClick() {
+    expandedRef.current.style.height = `${expandedHeight}px`;
+    expandAboutRef.current.style.height = '0'
+  }
 
   window.addEventListener('scroll', () => getOpacity(scrollY, setOpacity, 'top'))
 
@@ -15,11 +23,11 @@ export default function About({ scrollY }) {
       <h1>My name's Alex.</h1>
       {/* <h4>More specifically: Alexander Petit.</h4> */}
       <div id='about-gif'>
-        <div id='expand-about-btn' onClick={() => expanded.style.height = `${expandedHeight}px`}>
+        <div ref={expandAboutRef} id='expand-about-btn' onClick={handleExpandClick}>
           <h2>Want to know more about me?</h2>
         </div>
       </div>
-      <div id='about-expanded'>
+      <div ref={expandedRef} id='about-expanded'>
         <h5>A lil’ tidbit</h5>
         <p className='about-p'>
           To be a little more specific my name is Alexander Petit. I’m a full-stack developer with a preference for front-end. 
