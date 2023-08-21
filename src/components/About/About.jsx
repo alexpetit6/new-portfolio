@@ -11,11 +11,22 @@ export default function About({ scrollY }) {
   return (
     <div className='text-center about-text' id='top' style={ {opacity: `${opacity}`}}>
       <h1>My name's Alex.</h1>
-      <h4>More specifically: Alexander Petit.</h4>
+      {/* <h4>More specifically: Alexander Petit.</h4> */}
       <div id='about-gif'>
-        <div id='expand-about'>
+        <div id='expand-about-btn' onClick={() => setOpacity(0.25)}>
           <h2>Want to know more about me?</h2>
         </div>
+      </div>
+      <div id='about-expanded'>
+        <h5>A lil’ tidbit</h5>
+        <p className='about-p'>
+          To be a little more specific my name is Alexander Petit. I’m a full-stack developer with a preference for front-end. 
+          I value the aesthetics of a website and the functionality equally. Both are important in their own regards, and I strive to balance them. 
+          But if there’s one thing you should really know about me it’s that I love to learn.
+        </p>
+        <p className='about-p'>
+          I keep myself in a constant state of learning and challenge. Take this portfolio for example; I could’ve easily finished a simple portfolio website in a day, maybe two, if I just wrote it in EJS, set up some simple routes and navigation, an easy navbar off of bootstrap, and a little CSS. Instead I went for a completely different approach from what I was already comfortable with to make a highly dynamic SPA. In just the time I’ve spent with this project I have learned countless mechanics and features. I’ve been enlightened about handy Window properties such as scrollY and Element properties like offsetTop. With the two combined I made text that fades depending on a user’s scroll position. For me, the challenge of having to learn new methods and techniques to achieve a goal doesn’t stop me in any area of life, whether it’s rock climbing, Noita (a challenging video game with elements of gamified programming), or coding; the ominous presence of the unknown is for me an exciting invitation to learn and grow.
+        </p>
       </div>
       
 

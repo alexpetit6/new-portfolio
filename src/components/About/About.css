@@ -10,29 +10,34 @@
 
 #about-gif {
   width: 25%;
-  /* border: solid 1vmin black; */
   border-radius: 2vmin;
   background-image: url('https://i.imgur.com/QWY6j8K.gif');
   margin-bottom: 100vh;
-  /* opacity: 0.5; */
 }
 
-#expand-about {
-  /* background-image: radial-gradient(at 0% 0%, #FFF7AD, #FFA9F9, #2400FF); */
+#expand-about-btn {
   cursor: pointer;
-  background-color: rgba(222, 222, 222);
+  background-color: rgb(222, 222, 222);
   padding: none;
   border-radius: 2vmin;
   transition: background-color 2s, color 2s, text-shadow 2s;
 }
 
-#expand-about:hover {
+#expand-about-btn:hover {
   text-shadow: 1px 1px 2px black;
   background-color: rgba(222,222,222, 0);
   color: white;
-  border: 0.3vmin solid black
 }
 
-#expand-about > h2 {
+#expand-about-btn > h2 {
   margin: 0;
+}
+
+#about-expanded {
+  /* background-color: red; */
+  width: 75%
+}
+
+.about-p {
+  text-align: left;
 }
