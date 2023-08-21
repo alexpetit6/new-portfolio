@@ -12,7 +12,6 @@
   width: 25%;
   border-radius: 2vmin;
   background-image: url('https://i.imgur.com/QWY6j8K.gif');
-  margin-bottom: 100vh;
 }
 
 #expand-about-btn {
@@ -35,7 +34,16 @@
 
 #about-expanded {
   /* background-color: red; */
-  width: 75%
+  height: 0;
+  overflow: hidden;
+  width: 75%;
+  border: 0.5vmin solid black;
+  margin-bottom: 100vh;
+  transition: height 2s;
+}
+
+#about-expanded:hover {
+  height: auto;
 }
 
 .about-p {
