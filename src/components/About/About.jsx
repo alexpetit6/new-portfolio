@@ -1,6 +1,7 @@
 import './About.css'
 import { useState, useRef } from 'react'
 import { getOpacity } from '../../utilities/getOpacity'
+import ContactInfo from '../ContactInfo/ContactInfo';
 
 export default function About({ scrollY }) {
   const [opacity, setOpacity] = useState(0.25);
@@ -26,6 +27,7 @@ export default function About({ scrollY }) {
   return (
     <div className='text-center about-text' id='top' style={ {opacity: `${opacity}`}}>
       <h1>My name's Alex.</h1>
+      <ContactInfo />
       {/* <h4>More specifically: Alexander Petit.</h4> */}
       <div id='about-gif'>
         <div ref={expandAboutRef} id='expand-about-btn' onClick={handleExpand}>

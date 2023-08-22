@@ -1,4 +1,8 @@
-.about-text > div > h6 {
+.contact-info {
+  margin-bottom: 2vmin;
+}
+
+.contact-info > h6 {
   display: inline;
 }
 

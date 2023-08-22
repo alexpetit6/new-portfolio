@@ -9,12 +9,13 @@
 }
 
 #about-gif {
-  width: 25%;
   border-radius: 2vmin;
-  background-image: url('https://i.imgur.com/QWY6j8K.gif');
+  background-image: url('../../../public/images/gifs/ezgif.com-crop.gif');
 }
 
 #expand-about-btn {
+  width: 300px;
+  height: 77px;
   overflow: hidden;
   cursor: pointer;
   background-color: rgb(222, 222, 222);
@@ -31,6 +32,7 @@
 
 #expand-about-btn > h2 {
   margin: 0;
+  font-size: xx-large;
 }
 
 #about-expanded {
@@ -59,4 +61,14 @@
   text-align: left;
   margin: 2vmin;
   grid-column-end: span 5;
+}
+
+@media (max-width: 576px) {
+  #about-gif {
+    width: 300px;
+  }
+
+  #expand-about-btn > h2 {
+    font-size: xx-large;
+  }
 }
