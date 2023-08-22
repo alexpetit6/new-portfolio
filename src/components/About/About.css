@@ -15,11 +15,12 @@
 }
 
 #expand-about-btn {
+  overflow: hidden;
   cursor: pointer;
   background-color: rgb(222, 222, 222);
   padding: none;
   border-radius: 2vmin;
-  transition: background-color 2s, color 2s, text-shadow 2s;
+  transition: background-color 2s, color 2s, text-shadow 2s, height 2s;
 }
 
 #expand-about-btn:hover {
@@ -34,18 +35,28 @@
 
 #about-expanded {
   /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   height: 0;
   overflow: hidden;
   width: 75%;
   border: 0.5vmin solid black;
   margin-bottom: 100vh;
+  margin-top: 3vmin;
   transition: height 2s;
 }
 
-#about-expanded:hover {
-  height: auto;
+#about-expanded > h5 {
+  grid-column-start: 3;
 }
 
-.about-p {
+#about-expanded > button {
+  color: red;
+  grid-column-start: 5;
+}
+
+#about-p {
   text-align: left;
+  margin: 2vmin;
+  grid-column-end: span 5;
 }
