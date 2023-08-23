@@ -22,10 +22,10 @@ export default function Projects() {
             <div className="accordion-body">
               <div className='text-center'>
                 <h3>
-                  <a className='accordion-link' href="https://snoqualmie-valley-garden-club-37f9bfbdf548.herokuapp.com/">Heroku Site</a> 
+                  <a target='_blank' rel='noreferrer' className='accordion-link' href="https://snoqualmie-valley-garden-club-37f9bfbdf548.herokuapp.com/">Heroku Site</a> 
                 </h3>
                 <p>
-                  To test run the admin features click <a href="https://snoqualmie-valley-garden-club-37f9bfbdf548.herokuapp.com/admin">here</a> and sign in with email: alex@alex.com | password: alex
+                  To test run the admin features click <a target='_blank' rel='noreferrer' href="https://snoqualmie-valley-garden-club-37f9bfbdf548.herokuapp.com/admin">here</a> and sign in with email: alex@alex.com | password: alex
                 </p>
               </div>
                 <ul className="list-group">
@@ -48,7 +48,7 @@ export default function Projects() {
             <div className="accordion-body">
               <div className='text-center'>
                 <h3>
-                  <a className='accordion-link' href="https://macrocounter-8ca2ea342aae.herokuapp.com/foods/search">Heroku Site</a> 
+                  <a target='_blank' rel='noreferrer' className='accordion-link' href="https://macrocounter-8ca2ea342aae.herokuapp.com/foods/search">Heroku Site</a> 
                 </h3>
               </div>
               <ul className="list-group">
@@ -71,7 +71,7 @@ export default function Projects() {
             <div className="accordion-body">
               <div className='text-center'>
                   <h3>
-                    <a className='accordion-link' href="https://climbing-advice.herokuapp.com/">Heroku Site</a> 
+                    <a target='_blank' rel='noreferrer' className='accordion-link' href="https://climbing-advice.herokuapp.com/">Heroku Site</a> 
                   </h3>
               </div>
               <ul className="list-group">
@@ -93,7 +93,7 @@ export default function Projects() {
             <div className="accordion-body">
               <div className='text-center'>
                 <h3>
-                  <a className='accordion-link' href="https://alexpetit6.github.io/Minesweeper/">GH-Pages Site</a>
+                  <a target='_blank' rel='noreferrer' className='accordion-link' href="https://alexpetit6.github.io/Minesweeper/">GH-Pages Site</a>
                 </h3>
               </div>
               <ul className="list-group">

@@ -9,6 +9,8 @@ export default function ContactInfo() {
       <h6>Renton, WA</h6>
       &nbsp;|&nbsp;
       <h6>alexpetit6@gmail.com</h6>
+      &nbsp;|&nbsp;
+      <a href="/Resume.pdf" target='_blank' rel='noreferrer'>Resume</a>
     </div>
   )
 }
