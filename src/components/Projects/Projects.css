@@ -1,3 +1,16 @@
-.accordion {
+#projects {
   width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50vh;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion-link {
+  width: 100%;
+  text-align: center;
 }

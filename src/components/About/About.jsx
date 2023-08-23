@@ -3,7 +3,7 @@ import { useState, useRef } from 'react'
 import { getOpacity } from '../../utilities/getOpacity'
 import ContactInfo from '../ContactInfo/ContactInfo';
 
-export default function About({ scrollY }) {
+export default function About() {
   const [opacity, setOpacity] = useState(0.25);
   // const [offset, setOffset] = useState(0)
 
