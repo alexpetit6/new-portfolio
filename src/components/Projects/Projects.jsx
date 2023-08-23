@@ -52,9 +52,9 @@ export default function Projects() {
                 </h3>
               </div>
               <ul className="list-group">
-                <li className="list-group-item text-center"><strong>Python, Django, JS, Materialize CSS, CSS</strong></li>
+                <li className="list-group-item text-center"><strong>Python, Django, PSQL, JS, Materialize CSS, CSS</strong></li>
                 <li className="list-group-item">The most back-end intensive project of the list; done as a group project with one other classmate. Learned GitHub team version control flow by working with another contributor, and performed exceptionally with a teammate.</li>
-                <li className="list-group-item">Employed Django in conjunction with Python to build a full-stack web application that tracks a user's daily caloric and macronutrient intake, and returns to the user how many macronutrients are left to be consumed in the day.</li>
+                <li className="list-group-item">Employed Django in conjunction with Python, and PSQL to build a full-stack web application that tracks a user's daily caloric and macronutrient intake, and returns to the user how many macronutrients are left to be consumed in the day.</li>
                 <li className="list-group-item">Demonstrated ability to use APIs by utilizing Edemam's Food Database API to search for practically any food and return the calories and macronutrients of the searched food. Information from the API is immediately translated into the database.</li>
                 <li className="list-group-item">Utilized Materialize to efficiently configure a clean front-end for a richer user experience; Alongside client-side JS to create a unique user sign-up experience that instantly calculates necessary daily calories from the user entered macronutrient goals.</li>
               </ul>                
