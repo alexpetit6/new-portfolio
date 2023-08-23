@@ -1,3 +1,8 @@
+#anchor {
+  position: absolute;
+  visibility: hidden;
+}
+
 .display-1 {
   font-size: 50vmin;
   opacity: 0; 
