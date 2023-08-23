@@ -38,22 +38,22 @@ export default function About() {
         <button className='btn' onClick={handleCollapse}>X</button>
         <div id='about-p'>
           <p>
-            To be a little more specific my name is Alexander Petit. I’m a full-stack developer with a preference for front-end. 
+            To be a little more specific my full name is Alexander Petit. I’m a full-stack developer with a preference for front-end. 
             I value the aesthetics of a website and the functionality equally. Both are important in their own regards, and I strive to balance them. 
-            But if there’s one thing you should really know about me it’s that I love to learn.
+            But if there’s one thing you should really know about me: it’s that <strong>I love to learn.</strong>
           </p>
           <p>
-            I keep myself in a constant state of learning and challenge. Take this portfolio for example; 
-            I could’ve easily finished a simple portfolio website in a day, maybe two, if I just wrote it 
+            I keep myself in a constant state of education and challenge. Take this portfolio for example; 
+            I could’ve easily finalized a standard portfolio website in a day, maybe two, if I just wrote it 
             in EJS, set up some simple routes and navigation, an easy navbar off of bootstrap, and a little 
-            CSS. Instead I went for a completely different approach from what I was already comfortable with 
-            to make a highly dynamic SPA. In the time I’ve spent with this project I have learned countless 
-            mechanics and features. I’ve been enlightened about handy Window properties such as scrollY and 
-            Element properties like offsetTop. With the two combined I made text that fades depending on a 
-            user’s scroll position. For me, the challenge of having to learn new methods and techniques to 
+            CSS. Instead I completely diverged from what I was already comfortable with 
+            to make a highly dynamic SPA. In the time I’ve spent building this project I have learned countless 
+            mechanics and features. I’ve gained insight into handy Window properties such as innerHeight and 
+            Element methods like getBoundingClientRect. With the two combined I made components that fade depending on an 
+            element's position in the viewport. For me, the challenge of having to learn new methods and techniques to 
             achieve a goal doesn’t stop me in any area of life, whether it’s rock climbing, Noita (a 
-            challenging video game with elements of gamified programming), or coding; the ominous presence 
-            of the unknown is for me an exciting invitation to learn and grow.
+            brutally difficult video game with elements of gamified programming), or coding; the ominous presence 
+            of the unknown is to me an exciting invitation to learn and grow.
           </p>
         </div>
       </div>
