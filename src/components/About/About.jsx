@@ -2,6 +2,7 @@ import './About.css'
 import { useState, useRef } from 'react'
 import { getOpacity } from '../../utilities/getOpacity'
 import ContactInfo from '../ContactInfo/ContactInfo';
+import Skills from '../Skills/Skills';
 
 export default function About() {
   const [opacity, setOpacity] = useState(0.25);
@@ -57,6 +58,7 @@ export default function About() {
           </p>
         </div>
       </div>
+      <Skills />
       
 
       {/* <button onClick={viewport}>get offset</button>

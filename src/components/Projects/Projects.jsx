@@ -25,7 +25,7 @@ export default function Projects() {
                   <a className='accordion-link' href="https://snoqualmie-valley-garden-club-37f9bfbdf548.herokuapp.com/">Heroku Site</a> 
                 </h3>
                 <p>
-                  To test run the admin features click <a href="https://snoqualmie-valley-garden-club-37f9bfbdf548.herokuapp.com/admin">here</a> to the url and sign in with email: alex@alex.com | password: alex
+                  To test run the admin features click <a href="https://snoqualmie-valley-garden-club-37f9bfbdf548.herokuapp.com/admin">here</a> and sign in with email: alex@alex.com | password: alex
                 </p>
               </div>
                 <ul className="list-group">
@@ -52,7 +52,7 @@ export default function Projects() {
                 </h3>
               </div>
               <ul className="list-group">
-                <li className="list-group-item text-center"><strong>Python, Django, PSQL, JS, Materialize CSS, CSS</strong></li>
+                <li className="list-group-item text-center"><strong>Python, Django, SQLite, JS, Materialize CSS, CSS</strong></li>
                 <li className="list-group-item">The most back-end intensive project of the list; done as a group project with one other classmate. Learned GitHub team version control flow by working with another contributor, and performed exceptionally with a teammate.</li>
                 <li className="list-group-item">Employed Django in conjunction with Python, and PSQL to build a full-stack web application that tracks a user's daily caloric and macronutrient intake, and returns to the user how many macronutrients are left to be consumed in the day.</li>
                 <li className="list-group-item">Demonstrated ability to use APIs by utilizing Edemam's Food Database API to search for practically any food and return the calories and macronutrients of the searched food. Information from the API is immediately translated into the database.</li>
