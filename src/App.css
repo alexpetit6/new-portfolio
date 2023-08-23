@@ -3,8 +3,12 @@
   visibility: hidden;
 }
 
+#header {
+  width: 100%;
+}
+
 .display-1 {
-  font-size: 50vmin;
+  font-size: 30vw;
   opacity: 0; 
   transform: translateY(50vmin); 
   animation: fade-in 3s forwards;
@@ -17,15 +21,4 @@
   }
 }
 
-@media (max-width: 768px) {
-  .display-1 {
-    color: blue
-  }
-}
-
-@media (max-width: 576px) {
-  .display-1 {
-    color: red
-  }
-}
 

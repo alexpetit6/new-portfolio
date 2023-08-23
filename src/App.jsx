@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <div id='anchor'>this is never visible, this just keeps the page from starting lower than it should</div>
-    <h1 className="display-1 text-center">Hello,</h1>
+    <h1 className='display-1'>Hello,</h1>
     <About/>
     <Projects/>
     </>
