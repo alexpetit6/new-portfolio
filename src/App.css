@@ -2,7 +2,8 @@
   font-size: 50vmin;
   opacity: 0; 
   transform: translateY(50vmin); 
-  animation: fade-in 3s forwards; 
+  animation: fade-in 3s forwards;
+  margin-bottom: 50vh; 
 }
 
 @keyframes fade-in {

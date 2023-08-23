@@ -9,8 +9,7 @@ export default function About({ scrollY }) {
 
   const expandedRef = useRef(null);
   const expandAboutRef = useRef(null);
-  
-  
+  const aboutRef = useRef(null);
 
   function handleExpand() {
     expandedRef.current.style.height = `${expandedRef.current.scrollHeight}px`;
@@ -22,10 +21,10 @@ export default function About({ scrollY }) {
     expandAboutRef.current.style.height = `${expandAboutRef.current.scrollHeight}px`
   }
 
-  window.addEventListener('scroll', () => getOpacity(scrollY, setOpacity, 'top'))
-
+  window.addEventListener('scroll', () => getOpacity(setOpacity, aboutRef))
+  
   return (
-    <div className='text-center about-text' id='top' style={ {opacity: `${opacity}`}}>
+    <div ref={aboutRef} className='text-center about-text' id='top' style={ {opacity: `${opacity}`}}>
       <h1>My name's Alex.</h1>
       <ContactInfo />
       {/* <h4>More specifically: Alexander Petit.</h4> */}
@@ -60,10 +59,10 @@ export default function About({ scrollY }) {
       </div>
       
 
+      {/* <button onClick={viewport}>get offset</button>
+      <h3>offset: {offset}</h3> */}
       {/* <button onClick={() => getOpacity(scrollY, setOpacity, 'top')}>get opacity</button> */}
-      {/* <button onClick={getOffset}>get offset</button> */}
       {/* <h3>opacity: {opacity}</h3> */}
-      {/* <h3>offset: {offset}</h3> */}
       {/* <h2>{scrollY}</h2> */}
     </div>
   )
