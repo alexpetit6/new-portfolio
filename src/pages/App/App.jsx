@@ -4,9 +4,11 @@ import Landing from '../Landing/Landing';
 
 function App() {
   return (
+    <main>
     <Routes>
       <Route path='/' element={<Landing />} />
     </Routes>
+    </main>
   );
 }
 

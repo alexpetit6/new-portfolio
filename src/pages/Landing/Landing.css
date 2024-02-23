@@ -1,0 +1,82 @@
+@keyframes waves {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 100px 100px;
+  }
+}
+
+/* #root {
+  height: 200vh;
+  width: 200vw;
+  overflow: hidden;
+} */
+
+#background {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-image: radial-gradient(
+      circle farthest-corner at -300px -300px, 
+      red,
+      #fb7d7d85 39.9%,
+      #FB7D7D 40%,
+      #E7C159 60%,
+      #e7c1598d 60.1%,
+      #DAEF41 80%, 
+      #dbef4183 80.1%, 
+      #D5FF39
+    ); */
+  height: 200vh;
+  width: 200vw;
+  overflow: hidden;
+  /* animation-name: waves;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; */
+}
+
+.circles {
+  position: absolute;
+  transform: translate(-10%, -40%);
+}
+#one {
+  height: 490vh;
+  width: 490vh;
+  border-radius: 490vh;
+  background-image: radial-gradient(
+    circle farthest-side,
+    #d9f1408b 80%,
+    #D5FF39
+  );
+}
+#two {
+  height: 420vh;
+  width: 420vh;
+  border-radius: 420vh;
+  background-image: radial-gradient(
+    circle farthest-side,
+    #E7C15983 80%,
+    #DAEF41
+  );
+}
+#three {
+  height: 350vh;
+  width: 350vh;
+  border-radius: 350vh;
+  background-image: radial-gradient(
+    circle farthest-side,
+    #FB7D7D 80%,
+    #E7C159
+  );
+}
+#four {
+  height: 280vh;
+  width: 280vh;
+  border-radius: 280vh;
+  background-image: radial-gradient(
+    circle farthest-side,
+    rgb(255, 40, 40) 80%,
+    #ffffff3e
+  );
+}
