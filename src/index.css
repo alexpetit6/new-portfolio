@@ -31,4 +31,8 @@ button {
 	cursor: pointer;
 }
 
+:root {
+	--sarabun: "Sarabun", sans-serif;
+}
+
 /* CSS Custom Properties */
