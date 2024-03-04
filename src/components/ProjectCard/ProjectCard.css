@@ -1,0 +1,19 @@
+.project-card {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  overflow: hidden;
+  border-radius: 0.7vw;
+  background-color: black;
+  color: white;
+}
+
+.card-title {
+  justify-self: center;
+  align-self: center;
+  font: 200 calc(1em + 1vw) var(--sarabun);
+}
+
+.project-card > img {
+  width: 30vw;
+  object-fit: cover;
+}

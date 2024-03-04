@@ -13,13 +13,13 @@
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
 
 #landing-greeting {
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -28,20 +28,29 @@
 }
 
 #landing-greeting > h1 {
-  font-size: calc(2em + 5vw);
+  font-size: calc(2em + 10vw);
   font-weight: 400;
 }
 
 #landing-greeting > h3 {
-  font-size: calc(1em + 3vw);
+  font-size: calc(1em + 5vw);
   font-weight: 200;
 }
 
 #landing-nav-btns {
   display: flex;
-  width: 30vw;
-  justify-content: space-between;
+  width: 100vw;
+  justify-content: space-evenly;
   /* align-self: start; */
+}
+
+#landing-nav-btns > * {
+  height: 10vw;
+  width: 25svw;
+  border-radius: 1vw;
+  font: 200 calc(1em + 2vw) var(--sarabun);
+  /* font-family: var(--sarabun);
+  font-size: calc(1em + 2vw); */
 }
 
 
