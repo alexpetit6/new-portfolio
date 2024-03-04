@@ -9,7 +9,18 @@
   transform: translateX(-50%);
   height: 100vh;
   width: 1vw;
-  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, black 45% 55%, rgba(0, 0, 0, 0) 80%);
+}
+
+#horiz-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 1vw;
+  border-radius: 1vw;
+  background-image: linear-gradient(90deg, black,rgba(0, 0, 0, 0) 30% 70%, black);
 }
 
 #project-cards {
