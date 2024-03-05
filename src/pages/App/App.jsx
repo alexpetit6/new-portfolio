@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Landing from '../Landing/Landing';
 import Projects from '../Projects/Projects';
+import ProjectDetail from '../ProjectDetail/ProjectDetail';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Landing />} />
       <Route path='/projects' element={<Projects />} />
+      <Route path='/projects/:id' element={<ProjectDetail />}/>
     </Routes>
     </main>
   );
