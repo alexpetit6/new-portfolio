@@ -1,5 +1,16 @@
-.carousel > img {
-  width: 20vw;
+.carousel {
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+.carousel-imgs {
+  display: flex;
+}
+
+.carousel-imgs > * {
+  width: 30vw;
 }
 
 .img-preload {

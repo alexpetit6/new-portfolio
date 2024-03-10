@@ -1,5 +1,5 @@
 import './Carousel.css';
-import { useState } from 'react';
+import { useState, createRef, useRef, useEffect } from 'react';
 import { Fancybox } from '@fancyapps/ui';
 
 export default function Carousel() {
@@ -9,6 +9,14 @@ export default function Carousel() {
     current: 0,
     next: 1
   });
+
+  const refs = useRef([]);
+
+  // useEffect(() =>  {
+  //   refs[wrappedIndex(imgs, order.prev)].current.className = 'prev';
+  //   refs[wrappedIndex(imgs, order.current)].current.className = 'current';
+  //   refs[wrappedIndex(imgs, order.next)].current.className = 'next';
+  // }, []);
 
   function wrappedIndex(arr, idx) {
     return ((idx % arr.length) + arr.length) % arr.length;
@@ -28,19 +36,23 @@ export default function Carousel() {
       current: wrappedIndex(imgs, order.current + 1),
       next: wrappedIndex(imgs, order.next + 1)
     });
+    console.log(refs.current[order.current])
   }
 
-  const preLoad = imgs.map((i) => <img src={i} style={{visibility: 'hidden'}} />)
+
+  const Preload = imgs.map((i, idx) => <img src={i} ref={el => refs.current[idx] = el} className='img-preload'/>);
 
   return (
     // <Fancybox newClass="carousel-container">
       <div className="carousel">
-        <i onClick={handlePrev} class="fa-solid fa-chevron-left"></i>
-        <img src={imgs[order.prev]} alt="" className="prev" />
-        <img src={imgs[order.current]} alt="" className="current" />
-        <img src={imgs[order.next]} alt="" className="next" />
-        <i onClick={handleNext} class="fa-solid fa-chevron-right"></i>
-        {preLoad}
+        <i onClick={handlePrev} className="fa-solid fa-chevron-left"></i>
+        <div className='carousel-imgs'>
+          <img src={imgs[order.prev]} alt="" className="card-one" />
+          <img src={imgs[order.current]} alt="" className="card-two" />
+          <img src={imgs[order.next]} alt="" className="card-three" />
+        </div>
+        <i onClick={handleNext} className="fa-solid fa-chevron-right"></i>
+        {Preload}
       </div>
     // </Fancybox>
   )
