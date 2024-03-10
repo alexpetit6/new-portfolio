@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Fancybox } from '@fancyapps/ui';
 
 export default function Carousel() {
-  const imgs = ['/images/climbing-thumbnail.png', '/images/katie-thumbnail.png', '/images/macro-thumbnail.png', '/images/svgc-thumbnail.png']
+  const imgs = ['/images/climbing-thumbnail.jpg', '/images/katie-thumbnail.jpg', '/images/macro-thumbnail.jpg', '/images/svgc-thumbnail.jpg']
   const [order, setOrder] = useState({
     prev: imgs.length - 1,
     current: 0,
@@ -30,6 +30,8 @@ export default function Carousel() {
     });
   }
 
+  const preLoad = imgs.map((i) => <img src={i} style={{visibility: 'hidden'}} />)
+
   return (
     // <Fancybox newClass="carousel-container">
       <div className="carousel">
@@ -38,6 +40,7 @@ export default function Carousel() {
         <img src={imgs[order.current]} alt="" className="current" />
         <img src={imgs[order.next]} alt="" className="next" />
         <i onClick={handleNext} class="fa-solid fa-chevron-right"></i>
+        {preLoad}
       </div>
     // </Fancybox>
   )
