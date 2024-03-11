@@ -12,11 +12,14 @@ export default function Carousel() {
 
   const refs = useRef([]);
 
-  // useEffect(() =>  {
-  //   refs[wrappedIndex(imgs, order.prev)].current.className = 'prev';
-  //   refs[wrappedIndex(imgs, order.current)].current.className = 'current';
-  //   refs[wrappedIndex(imgs, order.next)].current.className = 'next';
-  // }, []);
+  useEffect(() =>  {
+    imgs.forEach((i, idx) => {
+      if (!Object.values(order).includes(idx)) refs.current[idx].className='hide'
+    });
+    refs.current[order.prev].className = 'prev';
+    refs.current[order.current].className = 'current';
+    refs.current[order.next].className = 'next';
+  }, [order]);
 
   function wrappedIndex(arr, idx) {
     return ((idx % arr.length) + arr.length) % arr.length;
@@ -36,7 +39,7 @@ export default function Carousel() {
       current: wrappedIndex(imgs, order.current + 1),
       next: wrappedIndex(imgs, order.next + 1)
     });
-    console.log(refs.current[order.current])
+    console.log(refs.current)
   }
 
 
