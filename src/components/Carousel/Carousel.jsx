@@ -16,9 +16,9 @@ export default function Carousel() {
     imgs.forEach((i, idx) => {
       if (!Object.values(order).includes(idx)) refs.current[idx].className='hide'
     });
-    refs.current[order.prev].className = 'prev';
-    refs.current[order.current].className = 'current';
-    refs.current[order.next].className = 'next';
+    refs.current[order.prev].className = `prev${refs.current[order.prev].className.slice(5)}`;
+    refs.current[order.current].className =  `curr${refs.current[order.current].className.slice(5)}`;
+    refs.current[order.next].className =  `next${refs.current[order.next].className.slice(5)}`;
   }, [order]);
 
   function wrappedIndex(arr, idx) {
@@ -31,31 +31,38 @@ export default function Carousel() {
       current: wrappedIndex(imgs, order.current - 1),
       next: wrappedIndex(imgs, order.next - 1)
     });
+    refs.current.forEach((r) => r.className=`${r.className.slice(0, 5)}  back`)
+    console.log(refs.current)
   }
-
+  
   function handleNext() {
     setOrder({
       prev: wrappedIndex(imgs, order.prev + 1),
       current: wrappedIndex(imgs, order.current + 1),
       next: wrappedIndex(imgs, order.next + 1)
     });
+    refs.current.forEach((r) => r.className=`${r.className.slice(0, 5)}  forward`)
     console.log(refs.current)
   }
 
-
-  const Preload = imgs.map((i, idx) => <img src={i} ref={el => refs.current[idx] = el} className='img-preload'/>);
+  //need seperate element to animate box-shadow with opacity for performance
+  const Imgs = imgs.map((i, idx) => {
+    return (
+      <div ref={el => refs.current[idx] = el}>
+        <div className='box-shadow'></div>
+        <img src={i} />
+      </div>
+    )
+  });
 
   return (
     // <Fancybox newClass="carousel-container">
       <div className="carousel">
         <i onClick={handlePrev} className="fa-solid fa-chevron-left"></i>
         <div className='carousel-imgs'>
-          <img src={imgs[order.prev]} alt="" className="card-one" />
-          <img src={imgs[order.current]} alt="" className="card-two" />
-          <img src={imgs[order.next]} alt="" className="card-three" />
+          {Imgs}
         </div>
         <i onClick={handleNext} className="fa-solid fa-chevron-right"></i>
-        {Preload}
       </div>
     // </Fancybox>
   )
