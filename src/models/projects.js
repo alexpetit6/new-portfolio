@@ -1,5 +1,5 @@
 function imgPath(title) {
-  return `/images/${title}-thumbnail.png`;
+  return `/images/${title}-thumbnail.jpg`;
 }
 
 const projects = [
